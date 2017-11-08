@@ -1,0 +1,90 @@
+
+<ion-header >
+
+  <ion-navbar color="primary">
+
+      <ion-buttons start>
+          <button ion-button icon-only color="dark">
+            <ion-icon name="logo-facebook" color></ion-icon>
+          </button>
+        </ion-buttons>
+
+    <ion-buttons end>
+      <button ion-button icon-only>
+        <ion-icon name="search"></ion-icon>
+      </button>
+    </ion-buttons>
+   
+    <ion-title>Button</ion-title>
+    <ion-buttons start>
+        <button ion-button icon-only>
+          <ion-icon name="contact"></ion-icon>
+        </button>
+      </ion-buttons>
+     
+      
+      <ion-buttons end>
+          <button ion-button icon-only>
+            <ion-icon name="home"></ion-icon>
+          </button>
+        </ion-buttons>
+    
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <p>Button Styles</p>
+  <button ion-button>Default Button</button>
+  <button ion-button outline>Outline Button</button>
+  <button ion-button clear>Clear Button</button>
+
+    <p>Button Colors</p>
+    <button ion-button>Default</button>
+    
+    <button ion-button color="secondary">Secondary</button>
+    
+    <button ion-button color="danger">Danger</button>
+    
+    <button ion-button color="light">Light</button>
+    
+    <button ion-button color="dark">Dark</button>
+
+
+  <p>Button shapes</p>
+  <button ion-button full>Full Button </button>
+  
+  <button ion-button block>Block Button</button>
+  
+  <button ion-button round>Round Button</button>
+
+
+
+  <p>Button Sizes</p>
+  <button ion-button large>Large</button>
+  
+  <button ion-button>Default</button>
+  
+  <button ion-button small>Small</button>
+
+  <p>Button with Icons</p>
+
+<button ion-button icon-start ><ion-icon name='home'></ion-icon> Left Icon</button>
+
+<button ion-button icon-end >Right Icon<ion-icon name='home'></ion-icon></button>
+<br>
+<button ion-button icon-only ><ion-icon name='home'></ion-icon></button>
+
+<p>Bind the color and outline inputs to an expression</p>
+<button ion-button (click)='isDangerColor()'>Toggle Danger/Primary</button>
+<button ion-button [color]="isDanger ? 'danger' : 'primary'" [outline]="isOutline">
+    Danger (Solid)
+  </button>
+
+  <button ion-button (click)="logEvent($event)">
+      Click me!
+    </button>
+
+</ion-content>

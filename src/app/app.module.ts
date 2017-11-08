@@ -1,3 +1,7 @@
+import { CardPage } from './../pages/card/card';
+import { ButtonPage } from './../pages/button/button';
+import { BadgePage } from './../pages/badge/badge';
+import { AlertPage } from './../pages/alert/alert';
 import { ActionSheetPage } from './../pages/actionsheet/actionsheet';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
@@ -12,7 +16,11 @@ import { HomePage } from '../pages/home/home';
   declarations: [
     MyApp,
     HomePage,
-    ActionSheetPage
+    ActionSheetPage,
+    AlertPage,
+    BadgePage,
+    ButtonPage,
+    CardPage
   ],
   imports: [
     BrowserModule,
@@ -22,7 +30,11 @@ import { HomePage } from '../pages/home/home';
   entryComponents: [
     MyApp,
     HomePage,
-    ActionSheetPage
+    ActionSheetPage,
+    AlertPage,
+    BadgePage,
+    ButtonPage,
+    CardPage
   ],
   providers: [
     StatusBar,
